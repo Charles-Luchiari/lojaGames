@@ -5,6 +5,8 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.generation.lojagames.repository.ProdutoRepository;
+
 @RestController
 @RequestMapping("/produtos")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
