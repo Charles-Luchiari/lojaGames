@@ -6,11 +6,11 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import com.generation.lojagames.model.Produto;
+import com.generation.lojagames.model.Categoria;
 
 @Repository
-public interface ProdutoRepository extends JpaRepository<Produto, Long>{
+public interface CategoriaRepository extends JpaRepository<Categoria, Long>{
 
-	public List <Produto> findAllByTituloContainingIgnoreCase(@Param("titulo") String titulo);
+	public List<Categoria> findAllByDescricaoContainingIgnoreCase(@Param("descricao") String descricao);
 	
 }
